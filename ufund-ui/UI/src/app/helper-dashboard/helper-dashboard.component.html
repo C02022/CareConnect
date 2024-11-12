@@ -1,0 +1,95 @@
+<body>
+  <div class="dashboardContainer">
+    <h2 class="dashboard-header">HELPER DASHBOARD - {{username}}</h2>
+    <div class="action-buttons">
+      <div class="basketContainer"><a [routerLink]="['/basket']"><button>FUNDING BASKET</button></a></div>
+      <div class="logoutContainer"><a [routerLink]="['/login']"><button (click)="logout()">LOGOUT</button></a></div>
+    </div>
+  </div>
+  
+  <div class="searchContainer">
+    <h2 class="needs-header">CareConnect Needs</h2>
+    <br>
+    <br>
+    <label for="searchQuery">&nbsp; Search for a Need: </label>
+      <input id="searchQuery" #searchQuery />
+      &nbsp; <button (click)="searchNeeds(searchQuery.value)">
+        Search by Name
+      </button>
+      &nbsp; <button (click)="searchNeedID(Number(searchQuery.value))">
+        Search by ID
+      </button>
+  </div>
+  
+  <div class="searchResults" *ngIf="isSearch">
+    <li *ngFor="let need of matchingNeeds; let g = index">
+      <h4 class="needContainer" style="display:inline-block"> NAME: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ need.name }}<br> TYPE: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ need.type }}<br> QUANTITY: &nbsp;&nbsp;{{ need.quantity }}<br> COST: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;${{ need.cost }} &nbsp;&nbsp;<div *ngIf="!showSuccessMatching[g]"> &nbsp;
+        <button (click)="addNeedToBasket(need.id, g, 'matching')">+ ADD</button> </div></h4>
+      <div *ngIf="showSuccessMatching[g]">
+        <p>This Need has been added to your Funding Basket.</p>
+      </div>
+    </li>
+  </div>
+  
+  <div class="mainNeedsContainer">
+    <div class="needTypeContainer">
+      <h2 class="imageHeader">OPERATION</h2>
+      <img class="operationImage" id="operationImage" src="../../assets/images/Operation-Image.PNG" alt="Image of Cartoon Surgical Procedure">
+    
+      <ul>
+        <li *ngFor="let need of operation; let h = index">
+          <h4 class="needContainer"> NAME: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ need.name }}<br> TYPE: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ need.type }}<br> QUANTITY: &nbsp;&nbsp;{{ need.quantity }}<br> COST: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;${{ need.cost }} &nbsp;&nbsp;<div *ngIf="!showSuccessOperation[h]"> &nbsp;
+              <button (click)="addNeedToBasket(need.id, h, 'operation')">+ ADD</button> </div></h4>
+          <div *ngIf="showSuccessOperation[h]">
+            <p>This Need has been added to your Funding Basket.</p>
+          </div>
+        </li>
+      </ul> 
+    </div>
+  
+    <div class="needTypeContainer">
+      <h2 class="imageHeader">MEDICATION</h2>  
+      <img class="medicationImage" id="medicationImage" src="../../assets/images/Medication-Image.PNG" alt="Image of Cartoon Pills & Medication">    
+    
+      <ul>
+        <li *ngFor="let need of medication; let i = index">
+          <h4 class="needContainer"> NAME: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ need.name }}<br> TYPE: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ need.type }}<br> QUANTITY: &nbsp;&nbsp;{{ need.quantity }}<br> COST: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;${{ need.cost }} &nbsp;&nbsp;<div *ngIf="!showSuccessMedication[i]"> &nbsp;
+            <button (click)="addNeedToBasket(need.id, i, 'medication')">+ ADD</button> </div></h4>
+          <div *ngIf="showSuccessMedication[i]">
+            <p>This Need has been added to your Funding Basket.</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="needTypeContainer">
+      <h2 class="imageHeader">EQUIPMENT</h2>
+      <img class="equipmentImage" id="equipmentImage" src="../../assets/images/Equipment-Image.png" alt="Photo of Cartoon Wheelchair">
+    
+      <ul>
+        <li *ngFor="let need of equipment; let j = index">
+          <h4 class="needContainer"> NAME: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ need.name }}<br> TYPE: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ need.type }}<br> QUANTITY: &nbsp;&nbsp;{{ need.quantity }}<br> COST: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;${{ need.cost }} &nbsp;&nbsp;<div *ngIf="!showSuccessEquipment[j]"> &nbsp;
+            <button (click)="addNeedToBasket(need.id, j, 'equipment')">+ ADD</button> </div></h4>
+          <div *ngIf="showSuccessEquipment[j]">
+            <p>This Need has been added to your Funding Basket.</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="needTypeContainer">
+      <h2 class="imageHeader">OTHER</h2>
+      <img class="otherImage" id="otherImage" src="../../assets/images/Other-Image.PNG" alt="Photo of Cartoon Blue House with a Cartoon Stethoscope overtop it">
+    
+      <ul>
+        <li *ngFor="let need of other; let k = index">
+          <h4 class="needContainer"> NAME: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ need.name }}<br> TYPE: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ need.type }}<br> QUANTITY: &nbsp;&nbsp;{{ need.quantity }}<br> COST: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;${{ need.cost }} &nbsp;&nbsp;<div *ngIf="!showSuccessOther[k]"> &nbsp;
+            <button (click)="addNeedToBasket(need.id, k, 'other')">+ ADD</button> </div></h4>
+          <div *ngIf="showSuccessOther[k]">
+            <p>This Need has been added to your Funding Basket.</p>
+          </div>
+        </li>
+      </ul>  
+    </div>
+  </div>  
+</body>

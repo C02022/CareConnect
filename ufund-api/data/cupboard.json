@@ -1,0 +1,13 @@
+[ {
+  "id" : 6,
+  "name" : "Toe Surgery",
+  "type" : "OPERATION",
+  "quantity" : 3,
+  "cost" : 3000
+}, {
+  "id" : 12,
+  "name" : "Abelcet Prescription",
+  "type" : "MEDICATION",
+  "quantity" : 10,
+  "cost" : 150
+} ]

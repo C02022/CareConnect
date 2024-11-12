@@ -1,0 +1,49 @@
+[ {
+  "id" : 1,
+  "name" : "MRI Scan",
+  "type" : "OPERATION",
+  "quantity" : 1,
+  "cost" : 800
+}, {
+  "id" : 2,
+  "name" : "Adderall Prescription",
+  "type" : "MEDICATION",
+  "quantity" : 5,
+  "cost" : 200
+}, {
+  "id" : 3,
+  "name" : "Knee Replacement",
+  "type" : "SURGERY",
+  "quantity" : 10,
+  "cost" : 0
+}, {
+  "id" : 4,
+  "name" : "Adderall Prescription",
+  "type" : "PRESCRIPTION",
+  "quantity" : 5,
+  "cost" : 250
+}, {
+  "id" : 5,
+  "name" : "MRI Scan",
+  "type" : "SCAN",
+  "quantity" : 10,
+  "cost" : 800
+}, {
+  "id" : 9,
+  "name" : "Wheelchair",
+  "type" : "EQUIPMENT",
+  "quantity" : 1,
+  "cost" : 2000
+}, {
+  "id" : 10,
+  "name" : "Stairlift",
+  "type" : "EQUIPMENT",
+  "quantity" : 4,
+  "cost" : 4200
+}, {
+  "id" : 11,
+  "name" : "Therapy",
+  "type" : "THERAPY",
+  "quantity" : 1,
+  "cost" : 50
+} ]

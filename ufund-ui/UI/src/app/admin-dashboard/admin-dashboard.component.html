@@ -1,0 +1,64 @@
+
+
+<div class="dashboardContainer">
+  <h1 class="dashboard-header">MANAGER DASHBOARD</h1>
+  <div class="action-buttons">
+    <div class="logoutButton"><a [routerLink]="['/login']"><button>LOGOUT</button></a></div>
+  </div>
+</div>
+<br>
+
+<div style="position:relative; left:40px" class="formsContainer">
+  <h2>Create New Need</h2>
+  <input style="font-size: 14pt" id="createName" placeholder="Name" #createName />
+  <input style="font-size: 14pt" id="createType" placeholder="Type" #createType />
+  <input style="font-size: 14pt" id="createQuantity" placeholder="Quantity" #createQuantity />
+  <input style="font-size: 14pt" id="createCost" placeholder="Cost" #createCost />
+  <br>
+  <button (click)="add(createName.value, createType.value, Number(createQuantity.value), Number(createCost.value))">Submit</button>
+</div>
+
+<br>
+<br>
+<ul>
+  <h2 class="needs-header">CUPBOARD</h2>
+  <li *ngFor="let need of needs; let i = index" class="needContainer">
+    <h4> NAME: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ need.name }}<br> TYPE: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ need.type }}<br> QUANTITY: &nbsp;&nbsp;{{ need.quantity }}<br> COST: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;${{ need.cost }} &nbsp;&nbsp;
+      &nbsp; <br><br><button (click)="toggleEditNeedForm(i)">Edit</button> &nbsp; <button type="button" class="delete-button" (click)="delete(need)">Delete</button>
+    </h4>
+    <div class="editFormContainer" *ngIf="showEditNeedList[i]">
+      <br>
+      <label for="newName">&nbsp; Enter Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </label>
+      <input id="newName" value={{need.name}} #newName />
+
+      <label for="newType"><br>&nbsp; Enter Type:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </label>
+      <input id="newType" value={{need.type}} #newType />
+
+      <label for="newQuantity"><br>&nbsp; Enter Quantity:&nbsp;&nbsp; </label>
+      <input id="newQuantity" value={{need.quantity}} #newQuantity />
+
+      <label for="newCost"><br>&nbsp; Enter Cost:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </label>
+      <input id="newCost" value={{need.cost}} #newCost />
+      <br>
+      <br>
+      &nbsp; <button type="button" class="add-button" (click)="update(i, need.id, newName.value, newType.value, Number(newQuantity.value), Number(newCost.value)); newName.value=''; newType.value=''; newQuantity.value=''; newCost.value=''">
+      Confirm
+    </button>
+      <br>
+      <br>
+    </div>
+  </li>
+</ul>
+<ul style="list-style-type: none;">
+  <h2 class="needs-header">PENDING NEED REQUESTS</h2>
+  <br>
+  <li *ngFor="let request of requests; let i = index" class="needContainer">
+    <h4>NAME: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ request.name }}<br> TYPE: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ request.type }}<br> QUANTITY: &nbsp;&nbsp;{{ request.quantity }}<br> COST: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;${{ request.cost }} &nbsp;&nbsp;
+      &nbsp; <br><br><button (click)="approve(request)">Approve</button> &nbsp; <button (click)="deny(request)">Deny</button>
+    </h4>
+  </li>
+</ul>
+
+<div class="pendingStatus" *ngIf="requestsAreEmpty">
+  <h2>There are no pending requests.</h2>
+</div>

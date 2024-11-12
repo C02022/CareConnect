@@ -1,0 +1,30 @@
+<div class="dashboardContainer">
+  <h2 class="dashboard-header">{{username}}'s Funding Basket</h2>
+  <div class="action-buttons">
+    <div class="goBackContainer"><a [routerLink]="['/helper']"><button>Go Back</button></a></div>
+  </div>
+</div>
+
+<br>
+<br>
+<br>
+
+<h2 class="needsHeader">Funding Basket</h2>
+
+<div class="needItemsContainer">
+  <div *ngFor="let need of helper.fundingBasket; let i = index" class="needContainer">
+    NAME: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ need.name }}<br>
+    TYPE: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ need.type }}<br>
+    QUANTITY: &nbsp;&nbsp;{{ need.quantity }}<br>
+    COST: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;${{ need.cost }} &nbsp;&nbsp;<br>
+    <button type="button" (click)="removeNeed(need.id)">Remove</button>
+  </div>
+</div>
+<br>
+<br>
+<div class="checkoutContainer"><button type="button" (click)="checkout()">Checkout</button></div>
+<br>
+<br>
+<div class="needsHeader" *ngIf="checkoutSuccess">
+  <h2 class="needsHeader">Checkout complete! Thank you for helping to fund CareConnect.</h2>
+</div>

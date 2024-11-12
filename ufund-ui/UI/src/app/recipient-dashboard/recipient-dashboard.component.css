@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Sometype+Mono&display=swap');
+
+.dashboardContainer {
+    font-family: Sometype Mono, sans-serif, Arial, Helvetica;
+    background-color: rgb(56, 55, 80);
+    color: #fff;
+    padding: 20px;
+    margin: -10px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.titleContainer {
+    background-color: rgb(56, 55, 80);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    margin: 0;
+}
+
+.action-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.homeButton button {
+    background-color: rgb(56, 55, 80);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    margin: 0;
+    font-family: "Arial", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 0.75rem;
+}
+
+.homeButton button:hover {
+    background-color: rgb(92, 98, 137);
+}
+
+.dashboard-header {
+    font-size: 24px;
+    margin: 0;
+}
+
+.formsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.formsContainer input {
+    width: 80%;
+    padding: 12px;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.formsContainer button {
+    background-color: rgb(56, 55, 80);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    margin: 0;
+    font-family: "Arial", sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 0.75rem;
+    width: 1655px;
+    height: 50px;
+}
+
+.formsContainer button:hover {
+    background-color: rgb(92, 98, 137);
+}
+
+.form-header, .requests-header {
+    font-size: 28px;
+    text-align: center;
+    font-family: 'Sometype Mono', sans-serif, Arial, Helvetica;
+    color: rgb(56, 55, 80);
+    margin-bottom: 20px;
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 5vh;
+}
+
+.requests-header {
+  font-family: Sometype Mono, sans-serif, Arial, Helvetica;
+  color: rgb(56, 55, 80);
+  font-size: 30px;
+  margin: 0;
+  text-align: left;
+}
+
+.needContainer {
+  margin: 20px;
+  padding: 10px;
+  background-color: #ffffff;
+  border: 1px solid #8a8383;
+  border-radius: 4px;
+  font-size: 20px;
+  font-family: 'Sometype Mono', sans-serif, Arial, Helvetica;
+  color: rgb(56, 55, 80);
+  display: block;
+  width: 400px;
+}
+
+.needContainer h4 {
+  margin: 0 5px;
+}
+
+
+

@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Sometype+Mono&display=swap');
+
+body {
+    font-family: Sometype Mono, sans-serif, Arial, Helvetica;
+    margin: -8px;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    height: 100vh;
+    font-size: 16px;
+}
+
+/* ================================================ */
+
+/* STYLING FOR BOTH CONTAINERS OF LOGIN PAGE */
+
+.mainContainer {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 50%;
+}
+
+/* STYLING FOR LEFT SIDE OF LOGIN PAGE */
+
+.leftSideContainer {
+    background-color: rgb(56, 55, 80);
+    color: whitesmoke;
+}
+
+#careConnectSymbol {
+    width: 30vh;
+    height: 30vh;
+    border-radius: 50%;
+}
+
+.leftSideText {
+    font-size: 2.625rem;
+}
+
+.leftSideTitle {
+    font-size: 3.75rem;
+}
+
+/* ================================================ */
+
+/* TASK: GET RIGHT SIDE TO LOOK LIKE DESIGN AND RESTYLE SIZING
+
+/* STYLING FOR Right SIDE OF LOGIN PAGE */
+.rightSideContainer {
+    background-color: whitesmoke;
+}
+
+.goBackContainer {
+    background-color: whitesmoke;
+    align-self: flex-start;
+    justify-self: flex-end;
+    position: absolute;
+}
+
+.top-right {
+    top: 10px;
+    right: 10px;
+}
+
+.titleContainer {
+    display: flex;
+    justify-content: center;
+    height: 10vh;
+}
+
+.title-header {
+    font-size: 1.5rem;
+}
+
+.formsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 5vh;
+}
+
+
+button, input {
+    border-radius: 0.75rem;
+}
+
+input {
+    padding: 7px, 16px;
+}
+
+input:hover {
+    background-color: lightgray;
+}
+
+button {
+  background-color: rgb(56, 55, 80); /* White background */
+  color: #fff; /* Dark blue text */
+  border: none; /* Remove the border */
+  cursor: pointer;
+  padding: 10px 20px;
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+button:hover {
+    background-color: rgb(92, 98, 137)
+}
+
+.resultContainer {
+    display: flex;
+    justify-content: center;
+    height: 10vh;
+}
+
+.finishLoginButton {
+    display: flex;
+    justify-content: center;
+    height: 10vh;
+}

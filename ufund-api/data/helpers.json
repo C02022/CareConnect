@@ -1,0 +1,13 @@
+[ {
+  "username" : "helper1",
+  "password" : "password",
+  "fundingBasket" : [ ]
+}, {
+  "username" : "helper2",
+  "password" : "password",
+  "fundingBasket" : [ ]
+}, {
+  "username" : "helper3",
+  "password" : "password",
+  "fundingBasket" : [ ]
+} ]

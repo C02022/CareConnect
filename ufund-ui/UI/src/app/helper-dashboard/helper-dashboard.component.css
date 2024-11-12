@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Sometype+Mono&display=swap');
+
+body {
+  font-family: Sometype Mono, sans-serif, Arial, Helvetica;
+  margin: 0;
+  padding: 0;
+}
+
+.dashboardContainer {
+  background-color: rgb(56, 55, 80);
+  color: #fff;
+  padding: 20px;
+  margin: -10px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-height: 40px;
+}
+
+.searchContainer {
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+
+.searchContainer label {
+  font-size: 25px;
+}
+
+.searchContainer input {
+  font-size: 25px;
+}
+
+.searchContainer button {
+  background-color: rgb(56, 55, 80);
+  color: #fff;
+  border: none;
+  border-radius: 0.75rem;
+  cursor: pointer;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.searchContainer button:hover {
+  background-color: rgb(92, 98, 137);
+}
+
+.searchResults {
+  padding-left: 800px;
+}
+
+/* STYLING FOR MAIN NEEDS CONTAINER */
+
+.mainNeedsContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.needTypeContainer {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  max-width: 25%;
+}
+
+.imageHeader {
+  padding-left: 190px;
+  padding-right: 150px;
+  color: rgb(56, 55, 80);
+  font-size: 30px;
+  text-decoration: underline;
+}
+
+img {
+  border-radius: 50%;
+  max-height: 400px;
+  max-width: 350px;
+  padding-left: 20px;
+  padding-right: 42px;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+li {
+  list-style: none;
+}
+
+.needs-header {
+  color: rgb(56, 55, 80);
+  font-size: 30px;
+  margin: 0;
+}
+
+/* Responsive font size for smaller screens */
+@media screen and (max-width: 768px) {
+  .needs-header {
+    font-size: 24px;
+  }
+}
+
+.dashboard-header {
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.action-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.basketContainer button, .logoutContainer button {
+  background-color: rgb(56, 55, 80);
+  color: #fff;
+  border: none;
+  border-radius: 0.75rem;
+  cursor: pointer;
+  padding: 10px 20px;
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.basketContainer button:hover, .logoutContainer button:hover {
+  background-color: rgb(92, 98, 137);
+}
+
+.searchContainer {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.needContainer {
+  padding: 10px;
+  background-color: #ffffff;
+  border: 1px solid #8a8383;
+  border-radius: 4px;
+  font-size: 20px;
+  color: rgb(56, 55, 80);
+  width: 400px;
+}
+
+.needContainer button {
+  background-color: rgb(56, 55, 80);
+  color: white;
+  border: none;
+  border-radius: 0.75rem;
+  cursor: pointer;
+  padding: 10px 20px;
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+.needContainer button:hover {
+  background-color: rgb(92, 98, 137);
+}

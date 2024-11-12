@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Sometype+Mono&display=swap');
+
+.mainContainer {
+    background-color: rgb(56, 55, 80);
+    font-family: Sometype Mono, sans-serif, Arial, Helvetica;
+    text-align: center;
+    position: relative;
+    padding: 10px;
+    margin: -8px;
+}
+
+#careConnectSymbol {
+  width: 30vh;
+  height: 30vh;
+  border-radius: 50%;
+}
+
+.loginButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.loginButton button {
+    background-color: rgb(56, 55, 80);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-family: "Arial", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 0.75rem;
+}
+
+.loginButton button:hover {
+    background-color: rgb(92, 98, 137);
+}
+
+.headerContainer {
+    text-align: center;
+    margin: 20px 0;
+    color: #fff;
+}
+
+.headerContainer h1 {
+    font-size: 36px;
+}
+
+.headerContainer h3 {
+    font-size: 24px;
+}
+
+.statisticContainer {
+    text-align: center;
+    margin: 20px auto;
+    padding: 25px;
+    display: block;
+    border: 1px solid;
+    max-width: 900px;
+    border-radius: 0.75rem;
+}
+
+.statisticContainer h4 {
+    margin: 0;
+    font-size: 22px;
+    font-family: Sometype Mono, sans-serif, Arial, Helvetica;
+    color: rgb(56, 55, 80);
+}
+
+.centeredButtonContainer {
+    text-align: center;
+    margin: 20px;
+}
+
+.centeredButtonContainer button {
+    background-color: rgb(56, 55, 80);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-family: "Arial", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 0.75rem;
+}
+
+.centeredButtonContainer button:hover {
+    background-color: rgb(92, 98, 137);
+}

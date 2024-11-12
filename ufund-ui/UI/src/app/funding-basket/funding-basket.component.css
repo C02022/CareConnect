@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Sometype+Mono&display=swap');
+
+.dashboardContainer {
+  font-family: Sometype Mono, sans-serif, Arial, Helvetica;
+  background-color: rgb(56, 55, 80);
+  color: #fff;
+  padding: 20px;
+  margin: -10px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-height: 40px;
+  }
+
+.dashboard-header {
+  font-family: Sometype Mono, sans-serif, Arial, Helvetica;
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.needsHeader {
+  font-family: Sometype Mono, sans-serif, Arial, Helvetica;
+  color: rgb(56, 55, 80);
+  font-size: 30px;
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.goBackContainer button {
+  background-color: rgb(56, 55, 80);
+  color: #fff;
+  border: none;
+  border-radius: 0.75rem;
+  cursor: pointer;
+  padding: 10px 20px;
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.goBackContainer button:hover {
+  background-color: rgb(92, 98, 137);
+}
+
+.action-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.needContainer {
+  padding-left: 20px;
+  background-color: #ffffff;
+  border: 1px solid #8a8383;
+  border-radius: 4px;
+  font-size: 20px;
+  font-family: 'Sometype Mono', sans-serif, Arial, Helvetica;
+  color: rgb(56, 55, 80);
+  width: 400px;
+  display: inline-block;
+  margin-left: 40px;
+  margin-right: 20px;
+  margin-top: 30px;
+  vertical-align: top;
+}
+
+.needContainer button {
+  background-color: rgb(56, 55, 80);
+  color: white;
+  border: none;
+  border-radius: 0.75rem;
+  cursor: pointer;
+  padding: 10px 20px;
+  margin: 10px 0;
+  font-size: 20px;
+}
+
+.checkoutContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.checkoutContainer button {
+  background-color: rgb(56, 55, 80);
+  color: white;
+  border: none;
+  border-radius: 0.75rem;
+  cursor: pointer;
+  padding: 10px 20px;
+  margin: 10px 0;
+  font-size: 30px;
+}
+
+.needContainer button:hover,
+.checkoutContainer button:hover {
+  background-color: rgb(92, 98, 137);
+}

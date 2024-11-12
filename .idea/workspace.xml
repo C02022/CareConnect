@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="196420b9-eb1a-48af-8682-db1b5931cffa" name="Changes" comment="Fixed up some of our Helper API calls to return null when username isn't found instead of returning an empty basket." />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/Paul/OneDrive - rit.edu/Documents/SWEN 261/team-project-2231-swen-261-04-d-teamfour/ufund-api"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="UfundApiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="ufund-api" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ufund.api.ufundapi.UfundApiApplication" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$/ufund-api" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ufund.api.ufundapi.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="TaskManager">
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Fixed up some of our Helper API calls to return null when username isn't found instead of returning an empty basket." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed up some of our Helper API calls to return null when username isn't found instead of returning an empty basket." />
+  </component>
+</project>

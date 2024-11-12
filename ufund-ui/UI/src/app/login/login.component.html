@@ -1,0 +1,67 @@
+<body>
+<div class="mainContainer leftSideContainer">
+  <img id="careConnectSymbol" src="assets/images/Care-Connect-Symbol.png">
+
+  <h2 class="leftSideText">Welcome!</h2>
+
+  <h2 class="leftSideText">Sign into</h2>
+
+  <h1 class="leftSideTitle">CareConnect</h1>
+</div>
+
+<div class="goBackContainer top-right"><a [routerLink]="['/home']"><button>Home</button></a></div>
+
+<div class="mainContainer rightSideContainer">
+
+  <div class="titleContainer">
+    <h1 class="title-header">Please Enter Your Information</h1>
+  </div>
+
+  <div class="formsContainer">
+    <input id="username" placeholder="Username" #username/>
+    <br>
+    <input id="password" type="password" placeholder="Password" #password/>
+    <br>
+    <button (click)="login(username.value, password.value)">CONFIRM</button>
+  </div>
+  <br>
+
+  <div class="resultContainer" *ngIf="loginError">
+    <p>Invalid Username or Password.</p>
+  </div>
+
+  <div *ngIf="isAdmin">
+    <div class="resultContainer"><p>Verification Successful. Welcome, Manager.</p></div>
+    <div class="finishLoginButton"><a [routerLink]="['/admin']"><button>View Manager Dashboard</button></a></div>
+  </div>
+
+  <div *ngIf="isHelper">
+    <div class="resultContainer"><p>Verification Successful. Welcome, Helper.</p></div>
+    <div class="finishLoginButton"><a [routerLink]="['/helper']"><button>View Helper Dashboard</button></a></div>
+  </div>
+
+  <div class="formsContainer">
+    <button (click)="toggleAccountForm()">New Helper? Create An Account!</button>
+  </div>
+  <br>
+
+  <div class="formsContainer" *ngIf="makingAccount">
+    <input id="newUsername" placeholder="New Username" #newUsername/>
+    <br>
+    <input id="newPassword" type="password" placeholder="New Password" #newPassword/>
+    <br>
+    <button (click)="createAccount(newUsername.value, newPassword.value)">Confirm</button>
+  </div>
+
+  <div *ngIf="accountCreated">
+    <div class="resultContainer"><p>Account Creation Successful. Welcome, Helper.</p></div>
+    <div class="finishLoginButton"><a [routerLink]="['/helper']"><button>View Helper Dashboard</button></a></div>
+  </div>
+
+  <div *ngIf="creationFailure">
+    <div class="resultContainer"><p>Account Creation Failed.</p></div>
+  </div>
+
+  <br>
+</div>
+</body>

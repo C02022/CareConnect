@@ -1,0 +1,22 @@
+<div class = "mainContainer">
+  <img id="careConnectSymbol" src="assets/images/Care-Connect-Symbol.png">
+  <div class="loginButton"> <a [routerLink]="['/login']"><button>LOGIN</button></a> </div>
+  <div class="headerContainer"><h1>CareConnect</h1></div>
+  <div class="headerContainer"><h3>Bringing Healthcare to Those in Need</h3></div>
+</div>
+
+<br>
+<br>
+
+<div class="statisticContainer">
+  <h4 style="display:inline-block"> &nbsp; Total Needs Funded with CareConnect: </h4><h4 style="color:green; display:inline-block">&nbsp;&nbsp; {{totalNeeds}}</h4>
+</div>
+<div class="statisticContainer">
+  <h4 style="display:inline-block"> &nbsp; Total Money Raised for Needs: </h4><h4 style="color:green; display:inline-block">&nbsp;&nbsp; ${{sumCosts}}</h4>
+</div>
+<div class="statisticContainer">
+  <h4 style="display:inline-block"> &nbsp; Total Helpers Funding Needs with CareConnect: </h4><h4 style="color:green; display:inline-block">&nbsp;&nbsp; {{totalHelpers}}</h4>
+</div>
+<br>
+
+    <div class = "centeredButtonContainer"><a [routerLink]="['/recipient']"><button>REQUEST A NEED</button></a></div>

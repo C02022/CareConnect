@@ -1,0 +1,29 @@
+<div class="dashboardContainer">
+  <h1 class="dashboard-header">RECIPIENT DASHBOARD</h1>
+  <div class="action-buttons">
+    <div class="homeButton top-right"><a [routerLink]="['/home']"><button>Home</button></a></div>
+  </div>
+</div>
+<br>
+<h2 class="form-header">Submit a Need Request</h2>
+
+<div class="formsContainer">
+  <br>
+  <input id="createName" placeholder="Name" #createName />
+  <input id="createType" placeholder="Type" #createType />
+  <input id="createQuantity" placeholder="Quantity" #createQuantity />
+  <input id="createCost" placeholder="Cost" #createCost />
+  <br>
+  <button (click)="add(createName.value, createType.value, Number(createQuantity.value), Number(createCost.value))">Submit</button>
+</div>
+
+<br>
+<br>
+<br>
+
+<ul style="list-style-type: none;">
+  <div><h1 class="requests-header">Pending Requests:</h1></div>
+  <li *ngFor="let need of needs; let i = index" class="needContainer">
+    <h4> NAME: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ need.name }}<br> TYPE: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ need.type }}<br> QUANTITY: &nbsp;&nbsp;{{ need.quantity }}<br> COST: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;${{ need.cost }} &nbsp;&nbsp;</h4>
+  </li>
+</ul>
