@@ -40,7 +40,7 @@ A full-stack web application that connects people who need healthcare with helpe
 
 Members who worked on this project:
 
-- Christopher Obando
+- Christopher Obando (Me)
 - Paul Vickers
 - Sam June
 - Tony Zheng
