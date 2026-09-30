@@ -1,19 +1,20 @@
 <p align="center">
-  <img src="docs/readme-images/care-connect-symbol.png" alt="CareConnect logo" width="140">
+  <img src="readme-image/logo.png" alt="CareConnect logo" width="140">
 </p>
 
 <h1 align="center">CareConnect</h1>
 
 <p align="center"><em>Bringing Healthcare to Those in Need</em></p>
 
-A full-stack web application that connects people who need healthcare with helpers who fund those needs. It is built with **TypeScript** and **Angular** on the front end and **Java Spring** on the back end. Testing uses **JUnit**, with **JaCoCo** for code coverage reporting and **Mockito** for mocking dependencies in unit tests.
+A web application that connects people who need healthcare with helpers who fund those needs. It has an **Angular** (TypeScript) front end and a **Java Spring** REST API on the back end. Data is saved to local JSON files instead of a database, so this project is a prototype rather than a production system. Testing uses **JUnit**, with **JaCoCo** for code coverage reporting and **Mockito** for mocking dependencies in unit tests.
 
 ## Tech Stack
 
 | Area | Technology |
 | --- | --- |
 | Front end | TypeScript 5.1, Angular 16 |
-| Back end | Java 17, Spring Boot 3.5 |
+| Back end | Java 17, Spring Boot 3.5 (REST API) |
+| Data storage | JSON files (no database) |
 | Testing | JUnit 5 |
 | Code coverage | JaCoCo |
 | Mocking | Mockito |
@@ -22,25 +23,25 @@ A full-stack web application that connects people who need healthcare with helpe
 
 ### Home Page
 
-![Home Page](docs/readme-images/home-page.png)
+![Home Page](readme-image/home-page.png)
 
 ### Need Request Page
 
-![Need Request Page](docs/readme-images/need-request-page.png)
+![Need Request Page](readme-image/need-request-page.png)
 
 ### Login Page
 
-![Login Page](docs/readme-images/login-page.png)
+![Login Page](readme-image/login-page.png)
 
 ### User/Helper Dashboard
 
-![User/Helper Dashboard](docs/readme-images/helper-dashboard.png)
+![User/Helper Dashboard](readme-image/helper-dashboard.png)
 
 ## Credits
 
 Members who worked on this project:
 
-- Christopher Obando (Me)
+- Christopher Obando
 - Paul Vickers
 - Sam June
 - Tony Zheng
