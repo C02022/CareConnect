@@ -1,0 +1,7 @@
+# IDE settings at the repo root (the API and UI folders have their own .gitignore)
+/.idea/
+/.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
