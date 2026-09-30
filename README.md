@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="docs/readme-image/logo.png" alt="CareConnect logo" width="140">
+  <img src="docs/readme-images/logo.png" alt="CareConnect logo" width="140">
 </p>
 
 <h1 align="center">CareConnect</h1>
@@ -23,19 +23,19 @@ A web application that connects people who need healthcare with helpers who fund
 
 ### Home Page
 
-![Home Page](docs/readme-image/home-page.png)
+![Home Page](docs/readme-images/home-page.png)
 
 ### Need Request Page
 
-![Need Request Page](docs/readme-image/need-request-page.png)
+![Need Request Page](docs/readme-images/need-request-page.png)
 
 ### Login Page
 
-![Login Page](docs/readme-image/login-page.png)
+![Login Page](docs/readme-images/login-page.png)
 
 ### User/Helper Dashboard
 
-![User/Helper Dashboard](docs/readme-image/helper-dashboard.png)
+![User/Helper Dashboard](docs/readme-images/helper-dashboard.png)
 
 ## Credits
 
